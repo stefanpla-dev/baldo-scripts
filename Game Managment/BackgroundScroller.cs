@@ -17,6 +17,11 @@ public class BackgroundScroller : MonoBehaviour
             moveSpeed = -moveSpeed;
         }
     }
+    void Update()
+    {
+        Scroll();
+        CheckReset();
+    }
 
     void SetupTexture()
     {
@@ -38,9 +43,4 @@ public class BackgroundScroller : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        Scroll();
-        CheckReset();
-    }
 }
